@@ -16,7 +16,7 @@
   Written by Limor Fried/Ladyada for Adafruit Industries.
   BSD license, all text above must be included in any redistribution
  ****************************************************/
-
+/*edited by MAINAK MONDAL*/
 #include "Arduino.h"
 #if defined(__AVR__) || defined(ESP8266)||defined(ESP32)
   #include <SoftwareSerial.h>
