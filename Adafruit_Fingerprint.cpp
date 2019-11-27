@@ -41,7 +41,7 @@
  ***************************************************************************/
 
 
-#if defined(__AVR__) || defined(ESP8266) || defined(FREEDOM_E300_HIFIVE1)
+#if defined(__AVR__) || defined(ESP8266)|| defined(ESP32) || defined(FREEDOM_E300_HIFIVE1)
 /**************************************************************************/
 /*!
     @brief  Instantiates sensor with Software Serial
@@ -88,7 +88,7 @@ void Adafruit_Fingerprint::begin(uint32_t baudrate) {
   delay(1000);  // one second delay to let the sensor 'boot up'
 
   if (hwSerial) hwSerial->begin(baudrate);
-#if defined(__AVR__) || defined(ESP8266) || defined(FREEDOM_E300_HIFIVE1)
+#if defined(__AVR__) || defined(ESP8266) || defined(ESP32)|| defined(FREEDOM_E300_HIFIVE1)
   if (swSerial) swSerial->begin(baudrate);
 #endif
 }
